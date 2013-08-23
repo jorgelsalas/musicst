@@ -1,0 +1,1043 @@
+/**
+ * 	Reglas Generales
+ */
+
+* { 
+  padding: 0; 
+  margin: 0; 
+  outline: 0; 
+}
+
+html { 
+	float:left;
+	height: 100%; 
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.hidden_text{
+	position: relative;
+	font-size:1px;
+	text-indent:-9000px;
+	margin:0px;
+ 	line-height: 0em; /* altura de cada linea de texto */
+
+}
+
+#page{
+	margin: 0 auto;
+	padding: 0 auto;
+	width:960px; /* TODO: definir width optimo. */
+	min-height:100%;
+	position:relative;
+}
+
+body {
+  	background:url('../images/site_header.jpg') repeat-x;
+	font: 13px/20px  Muli, Helvetica, Arial, sans-serif;
+	color: #4F5155;
+}
+
+
+.empty_row{
+	height:25px;
+}
+
+
+.center{
+	text-align:center;
+}
+
+.shadow{
+  box-shadow: rgba(0,0,0, 0.6) 0px 0px 8px;
+  -moz-box-shadow: rgba(0,0,0, 0.6) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0,0,0, 0.6) 0px 0px 8px; 
+}
+
+.blue{
+	color: #66ccff ;
+
+}
+
+.gray{
+	color: #333333 ;
+
+}
+
+.no_underline{
+	text-decoration: none;
+}
+
+
+/**
+ * 	Header / Titulo header
+ */
+
+header{
+	margin: 0 auto;
+	
+	height:74px;
+
+	display:block;
+	background-color:#1A1A1A;
+	
+	font: 13px/20px Muli, Helvetica, Arial, sans-serif;
+	color:#eeeeff;
+}
+
+
+header .titulo_header{
+	font: 20px  Muli, Helvetica, Arial, sans-serif;
+	margin-left: 10px;
+}
+
+header .titulo_header a{
+	color:#eeeeff;
+
+	text-decoration:none;
+}
+
+header .subtitulo_header{
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	padding-left:10px;
+
+}
+
+
+header .subtitulo_header a{
+	text-decoration:none;
+	color: #66ccff;
+
+}
+
+/*
+ * Search bar del header
+ */
+
+header .search_bar{
+	margin-left:20px;
+}
+
+header #campo_busqueda_visible{
+	width:130px;
+	
+	padding: 2px;
+	
+	background:#050505;
+	opacity: 0.9;
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	color:#EEEEFF;
+	
+	border: 3px solid #EEEEFF;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+header #campo_busqueda_visible:hover{
+	border: 3px solid #66ccff;
+}
+
+header #boton_submit_busqueda_visible{
+	height:25px;
+	width:75px;
+	
+	margin-left:10px;
+
+	
+	background:#050505;
+	opacity: 0.9;
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	color:#EEEEFF;
+	
+	
+	border: 2px solid #66ccff;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#form_buscar label.error{
+	height: 1px;
+	margin-left:-9999px;
+}
+
+#form_buscar label.error_message{
+	height: 1px;
+	margin-left:-9999px;	
+}
+
+
+header #boton_submit_busqueda_visible:hover{
+
+	color: #66ccff;
+
+}
+
+/* 
+ * Login bar del header
+ */
+
+header .login_bar{
+	margin-left:20px;
+}
+
+header #campo_usuario_login_visible{
+	width:90px;
+	padding: 2px;
+	
+	
+	margin-right:10px;
+	
+	background:#050505;
+	opacity: 0.9;
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	color:#EEEEFF;
+	
+	border: 3px solid #EEEEFF;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+header #campo_usuario_login_visible:hover{
+
+	border: 3px solid #66ccff;
+
+}
+
+
+header #campo_password_login_visible{
+	width:90px;
+	
+	padding: 2px;
+	
+	
+	background:#050505;
+	opacity: 0.9;
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	color:#EEEEFF;
+	
+	border: 3px solid #EEEEFF;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+
+header #campo_password_login_visible:hover{
+
+	border: 3px solid #66ccff;
+
+}
+
+header #boton_submit_login_visible{
+	height:25px;
+	width:75px;
+	
+	margin-left:10px;
+	
+	background:#050505;
+	opacity: 0.9;
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	color:#EEEEFF;
+	
+	
+	border: 2px solid #66ccff;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+header #div_logged_in{		
+	color:#66ccff;
+	margin-left: 1em;
+	/*Previous:
+	 * margin-left: 25em;
+	 */
+	
+}
+
+header #div_logged_in a{		
+	color:white;	
+}
+
+header #div_logged_in a:hover{		
+	color:#66ccff;	
+}
+
+
+header #boton_submit_login_visible:hover{
+	color: #66ccff;
+}
+
+#error_login{
+	color: red;
+}
+
+
+
+/**
+* Columna izquierda (nav)
+*/ 
+ 
+.left_menu nav{
+	margin: 0 auto;	
+}
+
+.left_column{
+  	width:auto;
+	height:auto;
+	text-align: center;
+    margin-left: 0 auto;
+    margin-right: 0 auto;	
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.left_menu {
+  position:relative;
+  height:auto;
+  width:auto;
+  text-align:center;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  
+  margin-left: 85px;
+  
+}
+
+.left_menu li{
+  float: left;
+  list-style-type: none;
+  margin-right: 5px;
+  background:#1A1A1A;
+}
+
+ .left_menu li:hover{
+	opacity: 0.9;
+}
+
+
+nav .popup_list_element{
+	width:150px;
+    border: 1px solid #000000;
+    
+}
+
+nav .popup_list_cell_content{
+    display: block;
+    text-align: center;	
+    height:auto;
+   	font: 16px  Muli, Helvetica, Arial, sans-serif;
+    color:#eeeeff;
+}
+
+
+ .left_menu a {
+   	font: 16px  Muli, Helvetica, Arial, sans-serif;
+
+ 	width:150px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+/**
+ * 	Main view (contenido)
+ */
+
+#main_view {
+	float:left;
+	
+	width: 950px;
+	height: auto;
+	margin-top: 10px;
+	padding-bottom:20px;
+	
+	border: 1px solid #E8E8E8;
+}
+
+#contenedor_contenido{
+	padding: 20px;
+}
+
+.titulo_resultados_busqueda{
+	margin-top:10px;
+}
+
+/**
+ * 	Panel resultados
+ */
+ 
+
+.contenedor_panel{
+	margin-top:20px;
+	width: 769px;
+	margin-left:auto;
+	margin-right:auto;
+} 
+
+.contenedor_panel_busqueda{
+	margin-top:20px;
+	width: 769px;
+	min-height: 10px;
+	max-height: 400px;
+	margin-left:auto;
+	margin-right:auto;
+} 
+
+.contenedor_panel_busqueda_browse{
+	margin-top:20px;
+	width: 690px;
+	min-height: 200px;
+	max-height: 400px;
+	margin-left:auto;
+	margin-right:auto;
+} 
+ 
+.panel{
+	margin-bottom: 5px;
+	background: transparent url(../images/panel/panel-l.png) 0 0 repeat-y;
+	font: 75%/1.5em Muli,Arial,"Trebuchet MS",sans-serif;
+	color: #333;
+}
+
+.panel_header{
+	background-position: 100% -52px;
+	background-image: url(../images/panel/panel-main-crn-r.png);
+}
+
+.panel_header h2{
+	height: auto;
+	min-height: 38px;
+	background: transparent url(../images/panel/panel-main-crn-l.png) 0 0 no-repeat;
+	padding: 0 1px;
+	color: #999;
+	font-size: 28px;
+	line-height: 18px;
+}
+
+.panel_header span{
+	display: block;
+	margin: 0 6px 0 5px;
+	padding: 8px 1px 12px 12px;
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	line-height: 1.1em;
+	font-size: 22px;
+	background-image: url(../images/panel/hd-black.gif);
+	height: 1%;
+	position: relative;
+	height: 24.44444465637207px;
+}
+
+.body_panel{
+	padding: 0 6px 0 5px;
+	background: transparent url(http://1.musicimg.ovi.com/u/1.0/assets/Global/PC/images/panels/panel-r.png) 100% 0 repeat-y;	
+
+
+}
+
+.review_panel{
+	width:500px;
+}
+
+
+.contenedor_tabla_resultados_busq_vacia{
+	height:30px;
+}
+
+.contenedor_tabla_resultados_busq{
+	height: 200px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+.tabla_resultados_busq thead{
+	font-size: 16px;
+}
+
+.contenedor_tabla_resultados_busq_sin_scroll{
+	height: auto;
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+
+.tabla_resultados_busq{
+	width: 100%;
+	border: 0 solid white;
+	border-collapse: separate;
+	padding: 0 1px;
+	border-spacing: 0;
+	display: table;	
+}
+
+.tabla_resultados_busq .nombre_artista{
+	color: #1A1A1A;
+}
+
+.tabla_resultados_busq .genero_artista{
+
+}
+
+.tabla_resultados_busq tbody{
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.tabla_resultados_busq tr{
+	background: transparent url(../images/busqueda/row-bg.png) 0 100% repeat-x;
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;	
+}
+
+.tabla_resultados_busq .col1{
+	background: transparent url(../images/busqueda/row-bg.png) 0 100% repeat-x;
+	width: 1%;
+	padding: 10px 0 9px 0;
+	border-top: 1px solid #D8D8D8;
+}
+
+.tabla_resultados_busq .col2{
+	background: transparent url(../images/busqueda/row-bg.png) 0 100% repeat-x;
+	padding-right: 1px;
+	padding: 10px 0 9px 0;
+	border-top: 1px solid #D8D8D8;
+}
+
+
+.img_busqueda{
+	margin: 0 13px 0 9px;
+	display: block;
+	width: 64px;
+	height: 58px;
+	background: transparent url(../images/busqueda/backgrounds1.png) 0 0 no-repeat;
+	background-position: -244px -68px;
+	text-decoration: none;
+	border: 0 none;
+}
+
+.img_busqueda img{
+	margin: 4px 0 0 10px;
+	text-decoration: none;
+	border: 0 none;
+}
+
+.body_panel_footer{
+	margin: 0 1px;
+	min-height: 30px;
+	background: transparent url(../images/panel/ft-bg.png) 0 0 repeat-x;
+}
+
+.panel_footer{
+	background: transparent url(../images/panel/panel-main-crn-r.png) 100% 100% no-repeat;
+}
+
+.panel_footer span{
+	display: block;
+	background: transparent url(../images/panel/panel-main-crn-l.png) 0 100% no-repeat;
+	padding: 8px 1px 10px 12px;
+}
+
+
+/*
+ * Formatos del menu lateral
+ */
+
+div#menu_sidebar{
+	height: 100%;
+	width: 100px;
+}
+
+
+/*
+ * End: Formatos del menu lateral
+ */
+ 
+ 
+/*
+ * Formatos de los paneles para home
+ */
+ 
+ .panel_home{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 1px;
+	padding-top: 15px;
+ }
+ 
+ .panel_home ul{
+	list-style: none;
+ }
+ 
+ .panel_home li{
+	display: block;
+	float: left;
+	width: auto;
+	margin: 0;
+	padding: 0;
+ }
+ 
+ .panel_home ul ul {
+	width: 131px;
+	padding: 0 10px;
+ }
+ 
+ .panel_home li li{
+	text-align: center;
+	height: 145px;
+	padding-top: 3px;
+	padding-bottom: 6px;
+	float: none;
+	overflow: hidden;
+ }
+ 
+ .panel_home .nombre_album_panel_home{
+	color: #666;
+	text-decoration: none;
+ }
+ 
+ .panel_home img{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	padding: 7px 9px 11px 15px;
+	background-position: -135px 0;
+	border: 0;
+	background: transparent url(../images/busqueda/backgrounds1.png) 0 0 no-repeat;
+ }
+ 
+ .panel_home li li span {
+	display: block;
+ }
+ 
+ /*
+ * End: Formatos de los paneles para home
+ */ 
+ 
+ 
+ /*
+ * Formatos para el form de creacion de
+ * cuenta de usuario
+ * 
+ */
+
+h1#titulo_formulario_inscripcion{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+div#contenedor_form_nuevo_usuario{
+	width: 500px;
+	height: auto;
+	margin: 0px auto;
+	background:#F7F7F7;
+	color: gray;
+	border: 1px solid #222222;
+	-moz-border-radius:15px;
+	border-radius: 15px;
+	-webkit-border-radius:15px;
+}
+
+#username, #email, #password, #password2, #nombre, #apellido1, #apellido2, #residencia {
+	width: 149px;
+}
+
+
+
+.campo_form_registro{
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+#contenedor_form_nuevo_usuario{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+td#label_form_nuevo_usuario{
+ 	text-align: right;
+ 	padding: 5px;
+ }
+
+input#text_input_form_nuevo_usuario{
+	width: 200px;
+}
+
+td#celda_boton_submit_form_nuevo_usuario{
+	margin: 0 auto;
+	text-align: center;
+}
+
+input#boton_submit_form_nuevo_usuario{
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	
+	height:40px;
+	width:75px;
+	
+	margin-top:20px;
+	
+	
+	background:#050505;
+	background: none;
+	opacity: 0.9;
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	color:#EEEEFF;
+	color:gray;
+	
+	
+	
+	border: 2px solid #000000;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+}
+
+input#boton_submit_form_nuevo_usuario:hover{
+	/*border: 2px solid #66ccff;*/
+	color:black;
+}
+
+.form_error{
+	color: red;
+	margin-left: 5px;
+}
+
+label.error { 
+	font-size: 14px;
+	float:inherit;
+	color: red; 
+	padding-left: .5em; 
+	vertical-align: center; 
+	margin: auto 0;
+}
+
+
+/*
+ * END: Formatos para el form de creacion de
+ * cuenta de usuario
+ * 
+ * 
+*/
+
+
+/*
+ * Formatos para la pagina del perfil de 
+ * un artista
+ * 
+ * 
+*/
+
+
+#perfil_artista_nav_header{
+	margin: 0 auto !important;
+	text-align: center;
+	padding-top: 15px;
+}
+
+#perfil_artista_nav_header a {
+	margin: auto !important;
+	
+}
+
+#perfil_artista_nav_header h2{
+	margin-bottom: 2px !important;
+}
+
+
+#perfil_artista_boton_descarga{
+
+	
+	text-align: center;
+	height: 25px;
+	
+	background:#050505;
+	background: none;
+	opacity: 0.9;
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	color:#EEEEFF;
+	color:gray;
+	
+	border: 2px solid #000000;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;	
+}
+
+#perfil_artista_boton_descarga:hover{
+	color:black;
+	
+}
+
+/*
+ * END: Formatos para la pagina del perfil de 
+ * un artista
+ * 
+ * 
+*/
+ 
+ 
+ 
+ 
+ 
+
+/*
+ * Formatos para la pagina del detalle de 
+ * un album
+ * 
+ * 
+*/
+
+.detalle_album_boton_descarga{
+	text-align: center;
+	height: 25px;	
+	font: 13px  Muli, Helvetica, Arial, sans-serif;
+	color:gray;
+	border: 2px solid #000000;
+	padding: 1px;
+	text-decoration:none;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;	
+}
+
+.detalle_album_boton_descarga:hover{
+	color:#0088cc;
+}
+
+
+#detalle_album_boton_play{
+	height: 30px;
+	width: 30px;
+	background:  url(../images/botones/boton_play.png) 100%  no-repeat;
+	border:none;
+}
+
+.boton_enviar_form{
+	text-align: center;
+	height: 40px;	
+	width: 60px;
+	font: 16px  Muli, Helvetica, Arial, sans-serif;
+	color:gray;
+	border: 2px solid #000000;
+
+	text-decoration:none;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;	
+}
+
+.boton_enviar_form:hover{
+	color:#0088cc;
+}
+
+#perfil_artista_tabla_contenedora_rating{
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+#perfil_artista_nav_header a{
+	
+}
+
+#detalle_album_link_al_artista{
+}
+
+ #textarea_review{
+ 	margin: auto;
+ 	height: 100px;
+ 	width: 400px;
+ 	max-height: 100px;
+ 	max-width: 400px;
+ 	color: black;
+ 	margin-bottom: 20px;
+ 	margin-top: 20px;
+ 	display:block;
+ }
+
+/*
+ * END: Formatos para la pagina del detalle de 
+ * un album
+ * 
+ * 
+*/
+
+/* pagina del edit album del admin */
+
+ .group { zoom: 1 }
+ 
+ /* mensajes administrador */
+ 
+ .admin_edit a{
+	color: #0088cc;
+	text-decoration: underline;
+ }
+ 
+ .link, .link a{
+	color: #0088cc;
+	text-decoration: underline;
+ }
+ 
+ /*
+ * Formato del footer
+ */ 
+ 
+ footer{
+ 	margin-top: 20px;
+	clear: both;
+	bottom: 0;
+	float: left;
+	width: 100%;
+	text-align: right;
+	background: transparent url(../images/panel/panel-main-crn-r.png) 100% -52px no-repeat;
+	
+ }
+
+ 
+ #contenido_footer{
+	display: block;
+	height: 40px;
+	padding: 0 19px;
+		background: transparent url(../images/panel/panel-main-crn-l.png) 0 0 no-repeat;
+ }
+
+  /*
+ * Texto de contenido
+ */ 
+ .panel_texto{
+	float: left;
+	width: 500px;
+	margin: 10px;
+	font-size: 17px;
+	line-height:30px;
+ }
+ 
+#imagen_acerca_de{
+	margin: 50px;
+	background: none;
+ }
+ 
+ /*visor de JQuery para el Browse*/
+ 
+ .content{
+	margin-left:auto;
+	margin-right:auto;
+ }
+ 
+ ul.sdt_menu{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size:14px;
+	width:1020px;
+}
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.sdt_menu li{
+	float:left;
+	width:170px;
+	height:85px;
+	position:relative;
+	cursor:pointer;
+}
+ul.sdt_menu li > a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:170px;
+	height:85px;
+	z-index:12;
+	background:transparent url(../images/overlay.png) no-repeat bottom right;
+	-moz-box-shadow:0px 0px 2px #000 inset;
+	-webkit-box-shadow:0px 0px 2px #000 inset;
+	box-shadow:0px 0px 2px #000 inset;
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:85px;
+	z-index:100;
+	-moz-box-shadow:0px 0px 4px #000;
+	-webkit-box-shadow:0px 0px 4px #000;
+	box-shadow:0px 0px 4px #000;
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:25px;
+	left:0px;
+	width:170px;
+	height:60px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	background:#111;
+	top:85px;
+	width:170px;
+	height:0px;
+	left:0px;
+	z-index:14;
+	-moz-box-shadow:0px 0px 4px #000 inset;
+	-webkit-box-shadow:0px 0px 4px #000 inset;
+	box-shadow:0px 0px 4px #000 inset;
+}
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+	margin-left:15px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #000;
+}
+ul.sdt_menu li span span.sdt_link{
+	color:#6CF;
+	font-size:24px;
+	line-height: 20px;
+	float:left;
+	clear:both;
+}
+ul.sdt_menu li span span.sdt_descr{
+	color:#0B75AF;
+	float:left;
+	clear:both;
+	width:155px; /*For dumbass IE7*/
+	font-size:10px;
+	letter-spacing:1px;
+}
+ul.sdt_menu li div.sdt_box{
+	display:block;
+	position:absolute;
+	width:170px;
+	overflow:hidden;
+	height:170px;
+	top:85px;
+	left:0px;
+	display:none;
+	background:#000;
+}
+ul.sdt_menu li div.sdt_box a{
+	float:left;
+	clear:both;
+	line-height:30px;
+	color:#0B75AF;
+}
+ul.sdt_menu li div.sdt_box a:first-child{
+	margin-top:15px;
+}
+ul.sdt_menu li div.sdt_box a:hover{
+	color:#fff;
+}
+ 
+ 

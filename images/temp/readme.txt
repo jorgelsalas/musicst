@@ -1,0 +1,1 @@
+Acá se crean archivos temporales cada vez que el usuario hace un upload.
